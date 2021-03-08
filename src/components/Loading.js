@@ -1,5 +1,11 @@
 import React from "react";
+import Loader from '../assets/loading.gif'
 
 export default function Loading() {
-  return <h1>hello from Loading</h1>;
+  return (
+    <div className="loading">
+      <h2>Loading...</h2>
+      <img src={Loader} alt="loading gif" />
+    </div>
+  )
 }
