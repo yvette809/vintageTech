@@ -1,5 +1,10 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 
 export default function EmptyCart() {
-  return <h1>hello from empty cart</h1>;
+  return <section className= "empty-cart section">
+    <h2>empty cart...</h2>
+    <Link to="/products" className="btn btn-primary"> fill it</Link>
+
+  </section>
 }
