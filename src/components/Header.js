@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from 'react-router-dom'
+import CartLink from './Cart/CartLink'
 import logo from '../assets/logo.svg'
 
 export default function Header() {
@@ -22,7 +23,7 @@ export default function Header() {
           </div>
           <div>
             <li><Link to="/login">Login</Link></li>
-            <li><Link to="/cart">Cart</Link></li>
+            <CartLink/>
 
           </div>
         </ul>
