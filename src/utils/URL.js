@@ -1,3 +1,3 @@
 // url
 
-export default "http://johnsmilgatututorials.com/projects/react-tech-store-v2"
+export default "http://localhost:1337"
