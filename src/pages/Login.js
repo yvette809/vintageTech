@@ -22,7 +22,7 @@ export default function Login() {
 	const [username, setUsername] = useState('default');
 	const [isMember, setIsmember] = useState(true);
 
-	let isEmpty = !email || !password || !username;
+	let isEmpty = !email || !password || !username || alert.show;
 
 	const toggleMember = () => {
 		setIsmember((prevMember) => {
@@ -35,6 +35,9 @@ export default function Login() {
 
 	const handleSubmit = async (e) => {
 		// alert 
+		showAlert({
+			msg:'accessing user data. Please wait...'
+		})
 		e.preventDefault()
 		let response;
 		if (isMember) {
